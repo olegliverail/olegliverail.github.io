@@ -28,7 +28,7 @@
   box-sizing: border-box;
 }
 
-  .body {width:903px}  
+  body {width:903px}  
 
 .header {
   border: 1px solid red;
