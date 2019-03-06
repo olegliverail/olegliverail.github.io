@@ -28,6 +28,8 @@
   box-sizing: border-box;
 }
 
+  .body {width:903px}  
+
 .header {
   border: 1px solid red;
   padding: 15px;
