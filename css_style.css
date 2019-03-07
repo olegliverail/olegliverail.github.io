@@ -1,50 +1,50 @@
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .example {background: red;}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .example {background: green;}
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .example {background: blue;}
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .example {background: orange;}
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .example {background: pink;}
-
-
-* {
+*, *:after, *:before{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-  body {width:918px}  
+.parent {
+  background: #888888;  
+  padding: 20px;    
+}  
 
-.header {
-  border: 1px solid red;
-  padding: 15px;
+.parent:after
+{
+  clear: both;
+  content: "";
+  display: block;
 }
+    
 
-.menu {
-  width: 600px;
+.column {
+  display: block;
   float: left;
-  padding: 15px;
-  border: 1px solid red;
+  width: 100%;
+  color: #ffffff;
+  padding: 10px;
+  font-family: Arial;
+  font-size: 45px;
 }
 
 .main {
-  width: 400px;
-  float: left;
-  padding: 15px;
-  border: 1px solid red;
+  background: #3054be;
+}
+.sidebar {
+  background: #ee7000;
+}
+
+@media only screen and (min-width: 641px){
+  .column {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+  .main {
+    width: 66.66%;
+  }
+  .sidebar {
+    width: 33.33%;
+  }
 }
